@@ -1,0 +1,30 @@
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> git init
+Reinitialized existing Git repository in C:/Users/jyo/Documents/MyProject/AppaleAPI1/.git/
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> git commit -m "first commit"
+[main (root-commit) 740a1c2] first commit
+ 11 files changed, 778 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 data/2025-12-27.txt
+ create mode 100644 data/2025-12-28.txt
+ create mode 100644 icon-192.png
+ create mode 100644 icon-512.png
+ create mode 100644 implementation_plan.md
+ create mode 100644 index.html
+ create mode 100644 manifest.json
+ create mode 100644 style.css
+ create mode 100644 sw.js
+ create mode 100644 verification_video.webp
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> git branch -M main
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> git remote add origin https://github.com/xcyxdm/AppaleAPI1.git
+error: remote origin already exists.
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 980.37 KiB | 1.52 MiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/xcyxdm/AppaleAPI1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\jyo\Documents\MyProject\AppaleAPI1> 
