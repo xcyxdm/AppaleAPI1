@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Daily Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f0f4f8">
+    <link rel="icon" type="image/png" href="icon-192.png">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1 id="current-date">Fetching date...</h1>
+            <div style="margin-top: 0.5rem; text-align: right;">
+                <button id="select-folder-btn"
+                    style="padding: 0.4rem 1rem; font-size: 0.8rem; background-color: var(--secondary-text);">📂
+                    フォルダ選択</button>
+                <div id="folder-status" style="font-size: 0.7rem; color: var(--secondary-text); margin-top: 0.2rem;">未選択
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="calendar-section">
+                <div class="calendar-controls">
+                    <button id="prev-month">&lt;</button>
+                    <h2 id="calendar-month">Month Year</h2>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <div class="calendar-weekdays">
+                    <div>日</div>
+                    <div>月</div>
+                    <div>火</div>
+                    <div>水</div>
+                    <div>木</div>
+                    <div>金</div>
+                    <div>土</div>
+                </div>
+                <div id="calendar-grid" class="calendar-grid">
+                    <!-- Dates -->
+                </div>
+            </div>
+
+            <div class="editor-section">
+                <textarea id="memo-input" placeholder="今日のメモを入力..."></textarea>
+                <div class="actions">
+                    <button id="save-btn">保存して閉じる</button>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h2>過去のメモ</h2>
+                <ul id="memo-list">
+                    <!-- List items will be populated here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
